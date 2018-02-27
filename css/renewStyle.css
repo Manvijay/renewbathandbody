@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Didact+Gothic|Julius+Sans+One');
+
+body,html{
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  background: grey;
+}
+
+nav{
+  background: white;
+  width: 100%;
+  height: 10vh;
+  padding: 2vh 15px 0px 10px;
+  margin: 0px;
+  vertical-align: middle;
+}
+
+.banner img{
+  width: 10vw;
+  height: 7vh;
+}
+
+nav> ul> li{
+  float: left;
+  display: inline-block;
+}
+
+.Category{
+      padding-top: 1vh;
+}
+
+.Category a{
+  font-family: "Comfortaa", cursive;
+  color: grey;
+  margin-left: 15px;
+  padding: 0px 5px;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.Category a:hover{
+  font-family: "Comfortaa", cursive;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  -webkit-transition: color .1s;
+}
+
+.Sub-Categories{
+  display: none;
+  list-style: none;
+  background-color: #f9f9f9;
+  text-align: left;
+  border: 1px solid white;
+  margin: 0px;
+  padding: 0px;
+  min-width: 250px;
+  resize:both;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Sub-Category a{
+  display:block;
+  position: relative;
+  margin: 0px;
+  padding: 2px 10px;
+  text-align: left;
+  text-decoration: none;
+  color: grey;
+}
+
+.Sub-Category >a:hover{
+  text-decoration: none;
+  color: black;
+  background: silver;
+
+}
+
+.Category:hover .Sub-Categories{
+    display:block;  
+    position:absolute;
+}
+
+.Sub-sub-Categories{
+  display: none;
+  list-style: none;
+  background-color: #f9f9f9;
+  text-align: left;
+  border: 1px solid white;
+  margin: 0px;
+  padding: 0px;
+  min-width: 250px;
+  resize:both;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Sub-sub-Category> a{
+  display:block;
+  position: relative;
+  padding: 2px 10px;
+  text-align: left;
+  text-decoration: none;
+  color: grey;
+}
+
+.Sub-sub-Category> a:hover{
+  text-decoration: none;
+  color: black;
+  background: silver;
+}
+
+.Sub-Category:hover .Sub-sub-Categories{
+    display:block;
+    margin: -32px 0px 0px 248px;
+    position:absolute;
+}
+
+#topImageSlider{
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  background: grey;
+  padding: 0px;
+  margin: 10vh 0px 0px 0px;
+  overflow: hidden;
+}
+
+figure{
+  position: relative;
+  width: 500%;
+  height: 70vh;
+  -webkit-animation: 20s slideAnimation infinite;
+}
+
+#imageContainer{
+  float: left;
+  height: 100%;
+  width: 20%;
+}
+
+#imageContainer img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#section2{
+  height: 90vh;
+  width: 100%;
+  background:white;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid div{
+  position: relative;
+}
+.grid div p{
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#section3{
+  height: 60vh;
+  width: 100%;
+  background: grey;
+  padding: 0px;
+  margin: 0px;
+}
+
+footer{
+  position: relative;
+  height:15vh;
+  background: grey;
+  overflow: hidden;
+}
+
+footer .icons{
+  position: relative;
+  left: 70%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+
+.icons i{
+  font-size: 1.8em;
+  padding: 0px 10px;
+}
+
+.icons a{
+  color: white;
+}
+
+footer i:hover{
+  color: #00abff;
+}
+
+footer .footerText{
+  position: relative;
+  left: 50%;
+  color: white
+}
+
+@-webkit-keyframes slideAnimation {
+  0%{
+      left: 0%;
+  }
+  18%{
+      left: 0%;
+  }
+  20%{
+    left: -100%;
+  }
+  38%{
+      left: -100%;
+  }
+  40%{
+      left: -200%;
+  }
+  58%{
+    left: -200%;
+  }
+  60%{
+      left: -300%;
+  }
+  78%{
+      left: -300%;
+  }
+  80%{
+    left: -400%;
+  }
+  100%{
+    left: -400%;
+  }
+}
