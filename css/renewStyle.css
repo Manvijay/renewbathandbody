@@ -8,115 +8,83 @@ body,html{
   background: grey;
 }
 
-nav{
-  background: white;
-  width: 100%;
-  height: 10vh;
-  padding: 2vh 15px 0px 10px;
+ul,li{
+  list-style: none;
   margin: 0px;
-  vertical-align: middle;
 }
 
-.banner img{
+nav{
+  position: relative;
+  display: inline-block;
+  height: 10vh;
+  width: 100%;
+  background-color: white;
+}
+
+
+.banner>img{
+  position: absolute;
   width: 10vw;
   height: 7vh;
-}
-
-nav> ul> li{
-  float: left;
-  display: inline-block;
+  top:2vh;
+  left: 50vw;
+  transform: translateX(-50%);
 }
 
 .Category{
-      padding-top: 1vh;
+  line-height: 10vh;
+  margin-right: 20px;
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: bottom;
+  bottom: 0;
 }
 
-.Category a{
-  font-family: "Comfortaa", cursive;
-  color: grey;
-  margin-left: 15px;
-  padding: 0px 5px;
-  text-decoration: none;
-  font-size: 1.1em;
-}
-
-.Category a:hover{
-  font-family: "Comfortaa", cursive;
-  text-decoration: none;
-  color: black;
-  font-size: 1.1em;
-  -webkit-transition: color .1s;
-}
-
-.Sub-Categories{
-  display: none;
-  list-style: none;
-  background-color: #f9f9f9;
-  text-align: left;
-  border: 1px solid white;
-  margin: 0px;
-  padding: 0px;
-  min-width: 250px;
-  resize:both;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.Sub-Category a{
-  display:block;
-  position: relative;
-  margin: 0px;
-  padding: 2px 10px;
-  text-align: left;
-  text-decoration: none;
+.Category>a{
   color: grey;
 }
 
-.Sub-Category >a:hover{
-  text-decoration: none;
+.Category>a:hover{
   color: black;
-  background: silver;
-
-}
-
-.Category:hover .Sub-Categories{
-    display:block;  
-    position:absolute;
-}
-
-.Sub-sub-Categories{
-  display: none;
-  list-style: none;
-  background-color: #f9f9f9;
-  text-align: left;
-  border: 1px solid white;
-  margin: 0px;
-  padding: 0px;
-  min-width: 250px;
-  resize:both;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.Sub-sub-Category> a{
-  display:block;
-  position: relative;
-  padding: 2px 10px;
-  text-align: left;
+  transition-duration: 0.3s;
   text-decoration: none;
-  color: grey;
 }
 
-.Sub-sub-Category> a:hover{
-  text-decoration: none;
+.SubCategories{
+  display:none;
+  position: absolute;
+  width: 100%;
+  height: 80vh;
+  left:0;
+  background-color: #BFC9CA  ;
+  opacity: 0.9;
+}
+
+.SubCategories>div{
+  display: table-cell;
+  text-align: left;
   color: black;
-  background: silver;
 }
 
-.Sub-Category:hover .Sub-sub-Categories{
-    display:block;
-    margin: -32px 0px 0px 248px;
-    position:absolute;
+.SubCategories>div>li:first-child{
+  font-weight: 450;
+}
+
+.SubCategories>div>li>a{
+  color: #566573;
+  display: block;
+}
+
+.SubCategories>div>li>a:hover{
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+
+.Category:hover .SubCategories{
+  display: table;
+  transition-delay: 2s;
 }
 
 #topImageSlider{
@@ -127,6 +95,7 @@ nav> ul> li{
   padding: 0px;
   margin: 10vh 0px 0px 0px;
   overflow: hidden;
+  border-bottom: solid black 1px;
 }
 
 figure{
@@ -148,52 +117,74 @@ figure{
   height: 100%;
 }
 
-#section2{
-  height: 90vh;
-  width: 100%;
-  background:white;
-  padding: 0px;
-  margin: 0px;
-  overflow: hidden;
-}
-
-.grid{
+#seasons{
+  background-color: grey;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 0;
 }
 
-.grid div{
-  position: relative;
-}
-.grid div p{
-  position: absolute;
-  margin: 0;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.grid-container-3 {
+  display: grid;
+  height: 20vh;
+  grid-template-columns: auto auto auto;
+  background-color: silver;
+  padding: 10px;
 }
 
-#section3{
-  height: 60vh;
+.grid-container-2 {
+  display: grid;
+  height: 20vh;
+  grid-template-columns: auto auto;
+  background-color: silver;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#instaContainer{
+  padding: 20px;
+  background: white;
+}
+
+#instaPicContainer{
+  display:grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  align-items: center;
+}
+
+#instafeed{
   width: 100%;
-  background: grey;
-  padding: 0px;
-  margin: 0px;
+  background: white;
+  padding: 0;
+  margin: 0;
+}
+
+#instafeed img{
+  border: 2px solid black;
+  margin-bottom: 10px;
+  width: 14vw;
+  height: 200px;
 }
 
 footer{
   position: relative;
   height:15vh;
-  background: grey;
+  background: black;
   overflow: hidden;
 }
 
 footer .icons{
-  position: relative;
-  left: 70%;
+  position: absolute;
+  left: 30%;
   top: 50%;
   transform: translate(-50%,-50%);
-  color: white;
+  color: grey;
 }
 
 .icons i{
@@ -202,17 +193,20 @@ footer .icons{
 }
 
 .icons a{
-  color: white;
+  color: grey;
 }
 
 footer i:hover{
-  color: #00abff;
+  color: white;
 }
 
 footer .footerText{
-  position: relative;
+  position: absolute;
   left: 50%;
-  color: white
+  top: 50%;
+  font-size: 0.8em;
+  transform: translateY(-50%);
+  color: grey;
 }
 
 @-webkit-keyframes slideAnimation {
