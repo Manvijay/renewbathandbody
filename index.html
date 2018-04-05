@@ -5,6 +5,13 @@
     <link rel="stylesheet" type="text/css" href="css\renewStyle.css">
     <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js\instafeed.min.js"></script>
+    <script src="js\instafeedcustomised.js"></script>
+      <script src="js\generalJS.js"></script>
 
     <title> Renew Bath and Body </title>
     <link rel="icon" href="images\logo.jpg" type="image">
@@ -12,151 +19,98 @@
   <body style="background:grey;">
 
     <nav class="container-fluid fixed-top">
-      <ul>
-        <li>
-          <a class="banner" href="#topImageSlider" >
-            <img src="images\logo.jpg" ></img> </a>
-        </li>
+      <ul id="CategoryLeft"style="float:left">
         <li class="Category">
           <a  href="#">Face </a>
-          <ul class="Sub-Categories">
-            <li class="Sub-Category">
-              <a  href="#">Face Sub-category 1 </a>
-              <ul class="Sub-sub-Categories">
-                <li class="Sub-sub-Category">
-                  <a  href="#">sub-sub menu item 1 </a>
-                  <a  href="#">sub-sub menu item 2 </a>
-                  <a  href="#">sub-sub menu item 3 </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="Sub-Category">
-              <a  href="#">Face Sub-category 2 </a>
-              <ul class="Sub-sub-Categories">
-                <li class="Sub-sub-Category">
-                  <a  href="#">Hi </a>
-                  <a  href="#">Hello </a>
-                  <a  href="#">Olah </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="Sub-Category">
-              <a  href="#">Face Sub-category 3 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Face Sub-category 4 </a>
-            </li>
+          <ul class="SubCategories">
+            <div>
+              <li> Face Sub Category 1</li>
+              <li><a href="#"> Lalalalal</a> </li>
+              <li><a href="#"> Hahahahah</a> </li>
+            </div>
+            <div>
+              <li>Face Sub Category 2</li>
+              <li><a href="#"> Lalalalal</a> </li>
+              <li><a href="#"> Hahahahah</a> </li>
+            </div><div>
+              <li>Face Sub Category 3</li>
+              <li><a href="#"> Lalalalal</a> </li>
+              <li><a href="#"> Hahahahah</a> </li>
+            </div><div>
+              <li> Face Sub Category 4</li>
+              <li><a href="#"> Lalalalal</a> </li>
+              <li><a href="#"> Hahahahah</a> </li>
+            </div>
           </ul>
         </li>
         <li class="Category">
           <a href="#"> Body </a>
-          <ul class="Sub-Categories">
-            <li class="Sub-Category">
-              <a  href="#">Body Sub-category 1 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Body Sub-category 2 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Body Sub-category 3 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Body Sub-category 4 </a>
-            </li>
-          </ul>
         </li>
         <li class="Category">
           <a href="#"> Bath </a>
-          <ul class="Sub-Categories">
-            <li class="Sub-Category">
-              <a  href="#">Bath Sub-category 1 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Bath Sub-category 2 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Bath Sub-category 3 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Bath Sub-category 4 </a>
-            </li>
-          </ul>
         </li>
         <li class="Category">
           <a href="#"> Make-Up </a>
-          <ul class="Sub-Categories">
-            <li class="Sub-Category">
-              <a  href="#">Make-Up Sub-category 1 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Make-Up Sub-category 2 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Make-Up Sub-category 3 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Make-Up Sub-category 4 </a>
-            </li>
-          </ul>
         </li>
+      </ul>
+      <li>
+        <a class="banner" href="#topImageSlider" >
+          <img src="images\logo.jpg" ></img> </a>
+      </li>
+      <ul id="CateforyRight"style="float:right">
         <li class="Category">
           <a href="#"> Men </a>
-          <ul class="Sub-Categories">
-            <li class="Sub-Category">
-              <a  href="#">Men Sub-category 1 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Men Sub-category 2 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Men Sub-category 3 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Men Sub-category 4 </a>
-            </li>
-          </ul>
         </li>
         <li class="Category">
           <a href="#"> Aromas </a>
-          <ul class="Sub-Categories">
-            <li class="Sub-Category">
-              <a  href="#">Aromas Sub-category 1 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Aromas Sub-category 2 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Aromas Sub-category 3 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Aromas Sub-category 4 </a>
-            </li>
-          </ul>
         </li>
         <li class="Category">
           <a  href="#">About Us </a>
         </li>
         <li class="Category">
           <a href="#"> Brands </a>
-          <ul class="Sub-Categories">
-            <li class="Sub-Category">
-              <a  href="#">Brands Sub-category 1 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Brands Sub-category 2 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Brands Sub-category 3 </a>
-            </li>
-            <li class="Sub-Category">
-              <a  href="#">Brands Sub-category 4 </a>
-            </li>
-          </ul>
         </li>
       </ul>
     </nav>
+
+<!--****************************Nav Bar ends here*****************************************************-->
+  <!--style>
+    #test:hover{
+      width: 100px;
+      transition-delay: 2s;
+    }
+
+  </style>
+
+
+
+    <div id="test" style="width: 20px; height: 50px; background-color:red; position:relative">
+      mm
+    </div-->
+
+
+    <div id="popModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Deals from Renew</h4>
+          </div>
+          <  <div class="modal-body" style="position:relative;text-align:center;top:10%">
+              <h3> I will insert a button here.<br> Click that and get good Deals!</h3>
+              <i class="fa fa-envelope" style="font-size:1.8em"> </i>
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
 
 <!--*********************This is section with image slider**********************************************************-->
 
@@ -184,20 +138,30 @@
 <!--*********************image slider ends**********************************************************-->
 
 <!--*********************This is section with grid of 4 cells**********************************************************-->
-
-    <div class="container-fluid grid" id="section2">
-          <div style="background:white"> <p>Summer Survivors</p></div>
-          <div style="background:silver"> <p>Winter Warriors</p></div>
-          <div style="background:silver"> <p>Spring Savor </p></div>
-          <div style="background:white"> <p>Fall Favorites </p></div>
+    <div class="container-fluid" id="seasons">
+      <div class="grid-container-3">
+        <div class="grid-item">Summer Special</div>
+        <div class="grid-item">Spring Special</div>
+        <div class="grid-item">Fall Special</div>
+      </div>
+      <div class="grid-container-2">
+        <div class="grid-item">Winter Special</div>
+        <div class="grid-item">Rain Special</div>
+      </div>
     </div>
 
 <!--*********************section2 ends here******************************************************-->
 
 <!--***********************Insta feed section of home page starts here**********************************-->
-    <!--div class="container-fluid" id="section3">
 
-    </div-->
+
+    <div class="container-fluid" id="instaContainer">
+          <h2 style="text-align:center"> Renew's instafeed</h2>
+          <div class="container-fluid" id="instaPicContainer">
+            <div class="container-fluid" id="instafeed">
+            </div>
+          </div>
+    </div>
 <!--***************************section 3 ends here***********************************************-->
 
     <footer class="container-fluid">
@@ -212,6 +176,8 @@
         Powered by Fission Content Management System | Website Design by 360 PSG</p>
       </div>
     </footer>
+
+
 
   </body>
 </html>
