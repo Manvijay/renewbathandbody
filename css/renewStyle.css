@@ -118,58 +118,67 @@ figure{
 }
 
 #seasons{
-  background-color: grey;
+  background-color: silver;
   display: grid;
   padding: 0;
+  margin:0;
 }
 
 .grid-container-3 {
   display: grid;
-  height: 20vh;
   grid-template-columns: auto auto auto;
-  background-color: silver;
+  background-color: inherit;
   padding: 10px;
 }
 
 .grid-container-2 {
   display: grid;
-  height: 20vh;
   grid-template-columns: auto auto;
-  background-color: silver;
+  background-color: inherit;
   padding: 10px;
 }
 
 .grid-item {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: inherit;
   padding: 20px;
   font-size: 30px;
   text-align: center;
 }
 
-#instaContainer{
-  padding: 20px;
-  background: white;
+.grid-item .card{
+  height: 20vh;
+  line-height: 20vh;
 }
 
-#instaPicContainer{
-  display:grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  align-items: center;
+#instaSection{
+  position: relative;
+  background: red;
+}
+
+#instaSection h2{
+  position: relative;
+  background-color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
 }
 
 #instafeed{
+  position: relative;
   width: 100%;
   background: white;
-  padding: 0;
-  margin: 0;
 }
 
 #instafeed img{
-  border: 2px solid black;
-  margin-bottom: 10px;
   width: 14vw;
   height: 200px;
+}
+
+.instaimg img {margin-bottom:30px;}
+.instaimg img:hover {
+	opacity:0.8;
+	-moz-opacity:0.8;
+	-webkit-opacity:0.8;
 }
 
 footer{
