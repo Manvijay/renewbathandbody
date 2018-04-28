@@ -3,15 +3,17 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css\renewStyle.css">
+    <link rel="stylesheet" type="text/css" href="css\magnific.css">
     <link rel="stylesheet" type="text/css" href="css\bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js\generalJS.js"></script>
+    <script src="js\custom.js"></script>
     <script src="js\instafeed.min.js"></script>
-    <script src="js\instafeedcustomised.js"></script>
-      <script src="js\generalJS.js"></script>
+    <script src="js\instafeed.js"></script>
+    <script src="js\magnific.min.js"></script>
 
     <title> Renew Bath and Body </title>
     <link rel="icon" href="images\logo.jpg" type="image">
@@ -79,11 +81,7 @@
       width: 100px;
       transition-delay: 2s;
     }
-
   </style>
-
-
-
     <div id="test" style="width: 20px; height: 50px; background-color:red; position:relative">
       mm
     </div-->
@@ -140,13 +138,33 @@
 <!--*********************This is section with grid of 4 cells**********************************************************-->
     <div class="container-fluid" id="seasons">
       <div class="grid-container-3">
-        <div class="grid-item">Summer Special</div>
-        <div class="grid-item">Spring Special</div>
-        <div class="grid-item">Fall Special</div>
+        <div class="grid-item">
+          <div class="card">
+            Summer Special
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            Spring Special
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            Fall Special
+          </div>
+        </div>
       </div>
       <div class="grid-container-2">
-        <div class="grid-item">Winter Special</div>
-        <div class="grid-item">Rain Special</div>
+        <div class="grid-item">
+          <div class="card">
+            Winter Special
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            Rain Special
+          </div>
+        </div>
       </div>
     </div>
 
@@ -154,14 +172,12 @@
 
 <!--***********************Insta feed section of home page starts here**********************************-->
 
-
-    <div class="container-fluid" id="instaContainer">
-          <h2 style="text-align:center"> Renew's instafeed</h2>
-          <div class="container-fluid" id="instaPicContainer">
-            <div class="container-fluid" id="instafeed">
-            </div>
-          </div>
+    <div id="instaSection">
+      <h2> Our Instafeed </h2>
+      <div class="container-fluid " id="instafeed">
+      </div>
     </div>
+
 <!--***************************section 3 ends here***********************************************-->
 
     <footer class="container-fluid">
